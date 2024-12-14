@@ -250,7 +250,7 @@
       }
 
       /* Media Queries for Responsiveness */
-      @media (max-width: 1000px) {
+      @media (max-width: 768px) {
         .navbar {
           padding: 10px 20px;
         }
@@ -259,8 +259,9 @@
           align-items: center;
         }
 
-        input[type="text"] {
-          display: none;
+        .navbar .search-form input[type="text"] {
+          width: 100%;
+          margin-top: 10px;
         }
 
         .content {
@@ -268,8 +269,7 @@
           text-align: center;
         }
 
-        .produk1,
-        .logo {
+        .produk1, .logo {
           display: none;
         }
 
@@ -302,7 +302,7 @@
   </head>
   <body>
     <div class="navbar">
-      <img src="IMG\logo.png" alt="logo" class="logo" />
+      <img src="IMG/logo.png" alt="logo" class="logo" />
       <div class="menu">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
@@ -318,19 +318,21 @@
         </div>
         <a href="#footer" id="contactLink">Contact</a>
       </div>
+      <form class="search-form" action="#" method="GET">
+        <input type="text" name="search" placeholder="Search..." />
+        <i class="fas fa-search"></i>
+      </form>
     </div>
 
     <!-- G2G Skincare Section -->
     <div class="product-info">
       <h2>About G2G Skincare</h2>
       <div class="product-info-content">
-        <img src="IMG/LOGO2.png" alt="G2G Skincare Logo" />
+        <img src="IMG/LOGO2.png" alt="G2G Skincare Logo" class="produk1" />
         <p>
-          Produk skincare yang diproduksi di GuangZhou DAAI Cosmetics
-          Manufacture Co., Ltd. di Kota Guangzhou, China. Produk G2G terdiri
-          dari berbagai jenis, seperti moisturizer, serum, clay mask, dan masker
-          wajah. Produk G2G dirancang untuk membantu pemula skincare, terutama
-          remaja, untuk mendapatkan kulit yang sehat.
+          Produk skincare yang diproduksi di GuangZhou DAAI Cosmetics Manufacture Co., Ltd. di Kota Guangzhou, China.
+          Produk G2G terdiri dari berbagai jenis, seperti moisturizer, serum, clay mask, dan masker wajah. Produk G2G
+          dirancang untuk membantu pemula skincare, terutama remaja, untuk mendapatkan kulit yang sehat.
         </p>
       </div>
     </div>
@@ -339,7 +341,7 @@
     <div class="footer" id="footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="IMG\logo_pth.png" alt="Logo" class="footer-logo-img" />
+          <img src="IMG/logo_pth.png" alt="Logo" class="footer-logo-img" />
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
